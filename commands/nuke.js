@@ -18,5 +18,5 @@ module.exports = {
             }, 3000);
 
     } else {
-            message.channel.send({content: "Du darfst den Command nicht ausführen!"});
+            message.channel.send({content: "You do not have permission!"});
         }}};
