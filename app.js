@@ -35,7 +35,7 @@ client.on('messageCreate', message => {
 });
 
 
-client.login(config.token).then(r => console.log(`Eingeloggt als ${client.user.tag}!`)).catch(e => console.log(e));
+client.login(config.token).then(r => console.log(`logged in as ${client.user.tag}!`)).catch(e => console.log(e));
 
 client.on('ready', () => {
     client.user.setActivity('with your Server', { type: 'PLAYING' });
